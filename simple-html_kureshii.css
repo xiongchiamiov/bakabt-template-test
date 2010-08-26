@@ -1,3 +1,46 @@
-body {
-	background-color: black;
+#header {
+	text-align: center;
+}
+
+/* Give us some nice [ foo | bar | baz ] action */
+#links span:before {
+	content: '| ';
+}
+#links span:first-child:before {
+	content: '[ ';
+}
+#links span:last-child:after {
+	content: ' ]';
+}
+
+#links span a {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+/* Push the poster up and to the left */
+#anime-info,
+#file-info,
+#summary {
+	margin-left: 450px;
+}
+#main {
+	position: relative;
+}
+#poster {
+	position: absolute;
+	top: 0;
+}
+
+#main h2 {
+	text-align: center;
+}
+
+#main label {
+	font-weight: bold;
+	display: block;
+}
+#main span,
+#file-info div {
+	margin-left: 1em; /* indent in a little bit */
 }
